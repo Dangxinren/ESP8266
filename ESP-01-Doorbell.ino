@@ -41,7 +41,7 @@ void netconnect() {
 
 void loop() {
   clientmqtt.loop();
-  delay(200);      // 1 round per 200ms
+  delay(200);     
   if (!clientmqtt.connected()) {
     netconnect();
   }
